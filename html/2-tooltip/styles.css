@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tooltip-container {
+	position: relative;
+}
+
+.tooltip-trigger {
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+.tooltip {
+	left: 50%;
+	bottom: 50%;
+	opacity: 0;
+	z-index: 10;
+	color: #fff;
+	display: block;
+	padding: 8px 12px;
+	position: absolute;
+	white-space: nowrap;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	background-color: #333;
+	transform: translateX(-50%);
+	transition: opacity 0.5s ease-in-out;
+}
+
+.tooltip:hover,
+.tooltip-trigger:hover + .tooltip,
+.tooltip-trigger:focus + .tooltip {
+	opacity: 1;
+}

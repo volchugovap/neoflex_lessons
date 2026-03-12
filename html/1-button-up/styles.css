@@ -1,0 +1,32 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.toTop {
+	height: 50px;
+	color: black;
+	width: 50px;
+	bottom: 50px;
+	right: 50px;
+	display: if();
+	display: flex;
+	cursor: pointer;
+	position: fixed;
+	border-radius: 50%;
+	align-items: center;
+	text-decoration: none;
+	justify-content: center;
+	background-color: white;
+	border: 1px solid black;
+	transition: background-color 0.5s ease-in-out;
+}
+
+.toTop:hover {
+	background-color: aqua;
+}
